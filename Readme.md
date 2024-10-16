@@ -44,11 +44,6 @@ The Hypervisor directory contains the hypervisor code along with its manager, wh
 
    ```c
      ...
-     [+] kaslr offset set to be:  0xa0b4000
-     Setting secondary CPU RVBARs...
-     cpu1: [0x210150000] = 0x81f95c000
-     ...
-     cpu7: [0x211350000] = 0x81f95c000
      [*] backup kernel path = /mnt/hgfs/macos/kernelcache.macho_backup
      [*] backup text length = 0x56a0000, and it will be written to 0x80e000000, so the top addr will be 0x8136a0000
    ```
