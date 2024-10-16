@@ -4,12 +4,7 @@ This project aims to provide a method to analyze and further fuzz the cross-XPU 
 
 This project employs manipulation of the stage-2 translation entries for cross-XPU memory to monitor access in both user and kernel spaces. Additionally, it utilizes hypervisor calls and single-step traps to comprehensively instrument macOS and record execution traces.
 
-- The `Hypervisor` directory contains the hypervisor code and its manager code.
-- The `Helper` directory contains the scripts and tools for the project, including `Instrumentation`, `ACOV`, `Memory-Scan`, and `Taint`.
-  - Follow the guidance in Instrumentation, one can instrument the kernelcache in the targeted kernel extensions.
-  - ACOV is a kernel extension interface for managing traces.
-  - Memory-Scan is a tool for dumping the VMA of the process of one seed application.
-  - Taint is a script for extracting constraints from the recorded trace.
+The Hypervisor directory contains the hypervisor code along with its manager, while the Helper directory includes essential scripts and tools such as Instrumentation, ACOV, and Memory-Scan. The Instrumentation tool allows for kernelcache instrumentation in targeted kernel extensions, and ACOV provides a kernel extension interface for managing traces. Additionally, Memory-Scan is used to dump the virtual memory area (VMA) of a specific seed application.
 
 ## Setup
 
